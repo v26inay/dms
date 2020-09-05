@@ -380,7 +380,7 @@ h1, h2, h3, h4, h5, h6 {
 #hero {
   width: 100%;
   height: 100vh;
-  background: url("../images/dashboard.jpg") top center;
+  background: url("https://cdn.jsdelivr.net/gh/v26inay/dms/images/dashboard.jpg") top center;
   background-size: cover;
   position: relative;
 }
