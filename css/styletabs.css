@@ -1,0 +1,18 @@
+.nav-tabs {
+    background-color:#303136;
+}
+
+.nav-tabs .active {
+    color: #428EFE !important;
+    background-color: #EEF5FF !important;
+}
+
+.tab-content {
+    text-align: left;
+    background-color: #EEF5FF;
+    padding-left: 5px;
+}
+
+span {
+	color: #428EFE;
+}
