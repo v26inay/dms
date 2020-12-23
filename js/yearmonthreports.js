@@ -255,14 +255,3 @@ $.fn.monthpicker = function (method) {
 };
 
 })(jQuery);
-
-$(".yearreports").monthpicker({pattern: 'yyyy-m', 
-    selectedYear: 2020,
-    startYear: 2010,
-    finalYear: 2030,});
-var options = {
-    selectedYear: 2015,
-    startYear: 2008,
-    finalYear: 2018,
-    openOnFocus: false
-};
