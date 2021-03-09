@@ -37,7 +37,7 @@ $(document).ready(function()
 		var sessionName=$("#sessionName").val();
 		var cashflowType=$("#dropdownSelection").val();
 		if (cashflowType==="Daily Cash Flow") {var daate=$("#date").val();}
-		if (cashflowType==="Monthly Cash Flow") {var daate=$("#yearmonth1").val();}
+		if (cashflowType==="Budgeted vs Actual Cash Flow") {var daate=$("#yearmonth1").val();}
 		if (cashflowType==="Projected Cash Flow") {var daate=$("#yearmonth3").val();}
 		var dataString = 'sessionName='+sessionName+'&cashflowType='+cashflowType+'&daate='+daate;
 		if ($.trim(cashflowType).length>0) {
