@@ -56,7 +56,6 @@
     }
   });
 
-  // Mobile Navigation
   if ($('.nav-menu').length) {
     var $mobile_nav = $('.nav-menu').clone().prop({
       class: 'mobile-nav d-lg-none'
@@ -91,7 +90,6 @@
     $(".mobile-nav, .mobile-nav-toggle").hide();
   }
 
-  // Navigation active state on scroll
   var nav_sections = $('section');
   var main_nav = $('.nav-menu, #mobile-nav');
 
@@ -114,7 +112,6 @@
     });
   });
 
-  // Toggle .header-scrolled class to #header when page is scrolled
   $(window).scroll(function() {
     if ($(this).scrollTop() > 100) {
       $('#header').addClass('header-scrolled');
@@ -127,7 +124,6 @@
     $('#header').addClass('header-scrolled');
   }
 
-  // Back to top button
   $(window).scroll(function() {
     if ($(this).scrollTop() > 100) {
       $('.back-to-top').fadeIn('slow');
@@ -143,7 +139,6 @@
     return false;
   });
 
-  // Clients carousel (uses the Owl Carousel library)
   $(".clients-carousel").owlCarousel({
     autoplay: true,
     dots: true,
@@ -161,7 +156,6 @@
     }
   });
 
-  // Porfolio isotope and filter
   $(window).on('load', function() {
     var portfolioIsotope = $('.portfolio-container').isotope({
       itemSelector: '.portfolio-item'
@@ -177,7 +171,6 @@
       aos_init();
     });
 
-    // Initiate venobox (lightbox feature used in portofilo)
     $(document).ready(function() {
       $('.venobox').venobox({
         'share': false
@@ -185,13 +178,11 @@
     });
   });
 
-  // jQuery counterUp
   $('[data-toggle="counter-up"]').counterUp({
     delay: 10,
     time: 1000
   });
 
-  // Testimonials carousel (uses the Owl Carousel library)
   $(".testimonials-carousel").owlCarousel({
     autoplay: true,
     dots: true,
@@ -199,7 +190,6 @@
     items: 1
   });
 
-  // Portfolio details carousel
   $(".portfolio-details-carousel").owlCarousel({
     autoplay: true,
     dots: true,
@@ -207,7 +197,6 @@
     items: 1
   });
 
-  // Init AOS
   function aos_init() {
     AOS.init({
       duration: 1000,
